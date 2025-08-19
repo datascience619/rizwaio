@@ -1,0 +1,33 @@
+{
+  "name": "a1-bedsheets-backend",
+  "version": "1.0.0",
+  "description": "Backend for A1 Bedsheets e-commerce platform",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "build": "npm install && npx prisma generate",
+    "migrate": "npx prisma migrate deploy",
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.33.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.1.5",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "stripe": "^11.17.0",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.11.0"
+  }
+}

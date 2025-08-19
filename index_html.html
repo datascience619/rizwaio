@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Bedsheets - Premium Bedding in UAE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0EA5E9;
+            --secondary: #8B5CF6;
+            --accent: #10B981;
+            --dark: #111827;
+            --gray: #6B7280;
+            --light-gray: #F3F4F6;
+            --white: #FFFFFF;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            background-color: #f9fafb;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-top {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+        }
+
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-top-contact a {
+            color: var(--white);
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        .header-main {
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 500px;
+            margin: 0 2rem;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            position: absolute;
+            right: 0.5rem;
+            top: 0.5rem;
+            background: none;
+            border: none;
+            color: var(--gray);
+            cursor: pointer;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--dark);
+            font-size: 0.875rem;
+        }
+
+        .header-action i {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .cart-count {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+
+        .nav {
+            background-color: var(--light-gray);
+            padding: 0.75rem 0;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-item a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0EA5E9 0%, #8B5CF6 100%);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .hero-heading {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subheading {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            background: var(--white);
+            padding: 1rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            flex: 1;
+        }
+
+        .feature-icon {
+            background-color: var(--light-gray);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+
+        .feature-text h3 {
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .feature-text p {
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
+        /* Categories Section */
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 0.5rem auto;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .category-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover .category-image img {
+            transform: scale(1.05);
+        }
+
+        .category-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .category-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .category-content a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .category-content a i {
+            margin-left: 0.5rem;
+            transition: transform 0.2s;
+        }
+
+        .category-content a:hover i {
+            transform: translateX(3px);
+        }
+
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            z-index: 2;
+        }
+
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-actions {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: bottom 0.3s;
+        }
+
+        .product-card:hover .product-actions {
+            bottom: 0;
+        }
+
+        .product-action {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--white);
+            color: var(--dark);
+            border: 1px solid var(--light-gray);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .product-action:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .product-content {
+            padding: 1rem;
+        }
+
+        .product-category {
+            color: var(--gray);
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .product-title {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-rating {
+            color: #FFB800;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .current-price {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .discount {
+            color: var(--accent);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--light-gray);
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .testimonial-content {
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 1rem;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-info h4 {
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info p {
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form {
+            display: flex;
+            margin-top: 1.5rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: var(--radius) 0 0 var(--radius);
+            font-size: 1rem;
+        }
+
+        .newsletter-button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0 1.5rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #D1D5DB;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-contact {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .footer-contact i {
+            margin-right: 0.75rem;
+            color: var(--primary);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .footer-social a {
+            color: var(--white);
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .footer-social a:hover {
+            background-color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 1.5rem;
+            text-align: center;
+            color: #9CA3AF;
+            font-size: 0.875rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-bar {
+                margin: 1rem 0;
+                max-width: 100%;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+            
+            .features {
+                flex-direction: column;
+            }
+            
+            .categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-input {
+                border-radius: var(--radius);
+                margin-bottom: 0.5rem;
+            }
+            
+            .newsletter-button {
+                border-radius: var(--radius);
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container header-top-content">
+                <div class="header-top-contact">
+                    <a href="tel:+971554471583"><i class="fas fa-phone"></i> +971 55 447 1583</a>
+                    <a href="mailto:rizwan.sheikh3@gmail.com"><i class="fas fa-envelope"></i> rizwan.sheikh3@gmail.com</a>
+                </div>
+                <div class="header-top-offers">
+                    Free shipping on orders over AED 149
+                </div>
+            </div>
+        </div>
+        <div class="container header-main">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    A1 <span>Bedsheets</span>
+                </a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for bedsheets, pillow covers, duvet covers...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="header-action">
+                        <i class="fas fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                    <a href="#" class="header-action">
+                        <i class="fas fa-heart"></i>
+                        <span>Wishlist</span>
+                    </a>
+                    <a href="#" class="header-action" style="position: relative;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Cart</span>
+                        <span class="cart-count">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Bedsheets</a></li>
+                    <li class="nav-item"><a href="#">Pillow Covers</a></li>
+                    <li class="nav-item"><a href="#">Duvet Covers</a></li>
+                    <li class="nav-item"><a href="#">Collections</a></li>
+                    <li class="nav-item"><a href="#">Offers</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">Luxury Bedding for Your Dreamy Nights</h1>
+                <p class="hero-subheading">Discover our premium collection of bedsheets, pillow covers, and duvet covers. Experience comfort like never before.</p>
+                <a href="#" class="hero-cta">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=658&q=80" alt="Luxury Bedsheets">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Free Delivery</h3>
+                    <p>On orders over AED 149</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Easy Returns</h3>
+                    <p>7 days return policy</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Secure Payment</h3>
+                    <p>100% secure payment</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="container">
+        <h2 class="section-title">Shop By Category</h2>
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Bedsheets">
+                </div>
+                <div class="category-content">
+                    <h3>Bedsheets</h3>
+                    <a href="#">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Pillow Covers">
+                </div>
+                <div class="category-content">
+                    <h3>Pillow Covers</h3>
+                    <a href="#">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1597674917663-a0a8bb4d0b6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Duvet Covers">
+                </div>
+                <div class="category-content">
+                    <h3>Duvet Covers</h3>
+                    <a href="#">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge">Sale</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=654&q=80" alt="Premium Cotton Bedsheet">
+                    <div class="product-actions">
+                        <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="product-action"><i class="fas fa-heart"></i></button>
+                        <button class="product-action"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Bedsheets</div>
+                    <h3 class="product-title">Premium Cotton Bedsheet - King Size</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(42)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">AED 129.00</span>
+                        <span class="original-price">AED 159.00</span>
+                        <span class="discount">19% off</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Silk Pillow Cover">
+                    <div class="product-actions">
+                        <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="product-action"><i class="fas fa-heart"></i></button>
+                        <button class="product-action"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Pillow Covers</div>
+                    <h3 class="product-title">Luxury Silk Pillow Cover - Set of 2</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">AED 89.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=658&q=80" alt="Floral Duvet Cover">
+                    <div class="product-actions">
+                        <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="product-action"><i class="fas fa-heart"></i></button>
+                        <button class="product-action"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Duvet Covers</div>
+                    <h3 class="product-title">Floral Print Duvet Cover - Queen Size</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(35)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">AED 199.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1555041469-586a7077ab77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Egyptian Cotton Bedsheet">
+                    <div class="product-actions">
+                        <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="product-action"><i class="fas fa-heart"></i></button>
+                        <button class="product-action"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Bedsheets</div>
+                    <h3 class="product-title">Egyptian Cotton Bedsheet - Single Size</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(56)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">AED 79.00</span>
+                        <span class="original-price">AED 99.00</span>
+                        <span class="discount">20% off</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The quality of these bedsheets is exceptional. I've never slept better! The delivery was also very fast here in Dubai."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Ahmed">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Ahmed</h4>
+                            <p>Dubai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I ordered the silk pillow covers and they are absolutely luxurious. My skin feels better in the morning. Highly recommend!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Omar Hassan">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Omar Hassan</h4>
+                            <p>Abu Dhabi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The customer service was excellent when I had to exchange a duvet cover. The process was smooth and hassle-free."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fatima Ali">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Fatima Ali</h4>
+                            <p>Sharjah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get updates on new products, special offers, and exclusive discounts.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" class="newsletter-input">
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>A1 Bedsheets</h3>
+                    <p>Providing premium quality bedding products to customers across the UAE for a comfortable and luxurious sleep experience.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Bedsheets</a></li>
+                        <li><a href="#">Pillow Covers</a></li>
+                        <li><a href="#">Duvet Covers</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Al Qassimia, Sharjah, United Arab Emirates</div>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-phone"></i>
+                        <div>+971 55 447 1583</div>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-envelope"></i>
+                        <div>rizwan.sheikh3@gmail.com</div>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-clock"></i>
+                        <div>Mon-Sat: 9AM - 6PM</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 A1 Bedsheets. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cart count update simulation
+            const cartCount = document.querySelector('.cart-count');
+            
+            // Product action buttons
+            const productActions = document.querySelectorAll('.product-action');
+            productActions.forEach(action => {
+                action.addEventListener('click', function() {
+                    if (this.querySelector('.fa-shopping-cart')) {
+                        // Add to cart logic
+                        cartCount.textContent = parseInt(cartCount.textContent) + 1;
+                        alert('Product added to cart!');
+                    } else if (this.querySelector('.fa-heart')) {
+                        // Add to wishlist logic
+                        alert('Product added to wishlist!');
+                    } else if (this.querySelector('.fa-eye')) {
+                        // Quick view logic
+                        alert('Quick view feature coming soon!');
+                    }
+                });
+            });
+            
+            // Newsletter form submission
+            const newsletterForm = document.querySelector('.newsletter-form');
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input').value;
+                if (email) {
+                    alert(`Thank you for subscribing with ${email}!`);
+                    this.querySelector('input').value = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
